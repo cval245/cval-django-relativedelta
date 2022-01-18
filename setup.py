@@ -19,7 +19,7 @@ test_deps = [
 ]
 
 setup(
-    name='django-relativedelta',
+    name='cval-django-relativedelta',
     version='1.1.2',
     package_dir={'': 'src'},
     packages=find_packages('src'),
@@ -30,19 +30,14 @@ setup(
     url='https://github.com/CodeYellowBV/django-relativedelta',
     keywords='django, ',
     setup_requires=[],
-    author='Code Yellow B.V.',
-    author_email='django-relativedelta@codeyellow.nl',
+    author='cvalen',
+    author_email='christopher-valentine@cval.me',
     test_suite='tests',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 1.10',
-        'Framework :: Django :: 1.11',
-        'Framework :: Django :: 2.0',
-        'Framework :: Django :: 2.1',
-        'Framework :: Django :: 2.2',
-        'Framework :: Django :: 3.0',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
@@ -53,6 +48,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Database',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
@@ -60,7 +56,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     install_requires=[
-        'Django >= 1.10, < 4.0',
+        'Django >= 4.0, < 5.0',
         'python-dateutil >= 2.6.0',
     ],
     tests_require=test_deps,
